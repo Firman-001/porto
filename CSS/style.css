@@ -84,8 +84,8 @@ section{
     gap: 30px;
 }
 .home-mg{
-    width: 730px;
-    height: 730px;
+    width: 750px;
+    height:750px;
     display: grid;
     gap: 50px;
     grid-template-columns: auto auto;
