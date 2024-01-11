@@ -84,7 +84,7 @@ header {
 
 .share {
     position: absolute;
-    bottom: 2rem;
+    bottom: -5rem;
     left: 15%;
     display: flex;
     align-items: center;
@@ -194,11 +194,6 @@ header {
         transition: .2s;
     }
 
-    .share {
-        left: 4%;
-        transition: .2s;
-        bottom: -7rem;
-    }
 
     :root {
         --big-font: 5.5rem;
