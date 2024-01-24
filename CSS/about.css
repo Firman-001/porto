@@ -125,12 +125,13 @@ header {
   height: 200px;
   display: inline-block;
   border-radius: 100%;
+  margin-top: 100px;
 }
 
 .info {
   display: inline-block;
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 100px;
   width: 85px;
 }
 
@@ -158,8 +159,9 @@ header {
 .grid-container {
   display: grid;
   gap: 10px;
-  grid-template-columns: auto auto auto;
-  width: 1500px;
+  grid-template-columns: auto auto;
+  width: 1000px;
+  height: 50PX;
 }
 
 .grid-item {
