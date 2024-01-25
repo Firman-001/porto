@@ -84,8 +84,8 @@ section{
     gap: 30px;
 }
 .home-mg{
-    width: 750px;
-    height:750px;
+    width: 650px;
+    height:650px;
     display: grid;
     gap: 50px;
     grid-template-columns: auto auto;
@@ -146,12 +146,133 @@ section{
     background: var(--text-color);
     border: 2px solid var(--text-color);
 }
+
+/* about */
+
+.card-about {
+    width: 380px;
+    height: 380px;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  
+.avatar {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 100%;
+    margin-top: 100px;
+  }
+  
+  .profile {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+    width: 85px;
+    justify-content: space-between;
+  }
+  
+  .info-1, .info-2 {
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    border-radius: 6px;
+    border: 2px solid;
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .info-2 {
+    height: 100px;
+    width: 300px;
+    border-radius: 3px;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+  }
+ .skill{
+    margin-top: 100px;
+ }
+ .card-about h1{
+    font-size: 50px;
+    color: var(--main-color);
+    border: 2px solid; 
+    padding: 0px;
+    text-align: center; 
+    width: 500PX;
+ }
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto  ;
+    width: auto;
+  }
+  
+  .grid-item {
+    background: var(--bg-color);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10px;
+  }
+  
+  .skill h2 {
+    font-size: 50px;
+    color: var(--text-color);
+    margin-left: 50px;
+  }
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+ul.navbar li a.active {
+    color: #ffae00;
+    /* Anda juga bisa menambahkan atribut lain sesuai kebutuhan */
+}
+.My-project{
+    margin-top: 300px;
+}
+.My-project h1{
+    font-size: 50px;
+    color: var(--main-color);
+    border: 2px solid; 
+    padding:20px;
+    text-align: center; 
+    width: 500PX;
+}
+.card {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .card-project {
+    border: 1px solid #ccc; /* Tambahkan gaya border sesuai kebutuhan Anda */
+    margin: 0 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
+    padding: 0 10px; /* Sesuaikan padding sesuai kebutuhan Anda */
+    border-radius: 10px;
+  }
+
+  .card-project img {
+    max-width: 100%; /* Pastikan gambar tidak melebihi lebar kartu */
+    height: auto; /* Biarkan tinggi gambar diatur secara otomatis */
+  }
+/* footer */
 .share{
-    position: absolute;
-    bottom: 3rem;
-    left: 15%;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    left: 40%;
     display: flex;    
     align-items: center;
+    padding: 20px;
+    margin-top: 100px;
 }
 .share p{
     font-size: 17px;
@@ -176,48 +297,7 @@ section{
 .social I:HOVER{
     transform: translateY(-10PX);
 }
-/* about */
-.card {
-    width: 380px;
-    height: 380px;
-    margin-top: 200px;
-    margin-left: 300px;
-  }
-  .avatar {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    margin: 30px 15px 20px 25px;
-    border-radius: 100%;
-  }
   
-  .info {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 30px;
-    width: 85px;
-  }
-  
-  .info-1, .info-2 {
-    display: inline-block;
-    height: 30px;
-    width: 150PX;
-    border-radius: 6px;
-    border: 2px solid;
-    margin-top: 20PX;
-    color: var(--text-color);
-    text-align: center;
-    padding: 5px;
-  }
-  
-  .info-2 {
-    height: 100px;
-    width: 300PX;
-    border-radius: 3px;
-    text-align: left;
-    padding: 20px;
-  }
-
 @media (max-width: 1850px){
     header{
         padding: 15px 8%;
@@ -237,34 +317,107 @@ section{
         padding: 15px 4%;
         transition: .2s;
     }
-    section{
+    /* section{
         padding: 0 4%;
         transition: .2s;
-    }
-    .share{
-        left: 4%;
-        transition: .2s;
-    }
+    } */
     :root{
         --big-font:5.5rem;
         --p-font:1rem;
         transition: .2s;
     }
+    .card {
+        margin: 0 -5px;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .card:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
-@media (max-width: 1020px){
-    .navbar a{
+@media (max-width: 1047px){
+    .navbar a {
         margin: 0 15px;
     }
-    :root{
-        --big-font:5rem;
-        --p-font:1rem;
+
+    :root {
+        --big-font: 5rem;
+        --p-font: 1rem;
         transition: .2s;
     }
+
+    .share {
+        left: 2%;
+        transition: .2s;
+        bottom: -5rem;
+    }
+    .share p {
+        font-size: 17px;
+        color: var(--text-color);
+        margin-right: 25px;
+    }
+    
+    .social i {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+        background: linear-gradient(130.08deg, #383528 #191919 100%);
+        box-sizing: 0px 20px 40px #00000070;
+        border: 1px solid #3b3b3b;
+        border-radius: 50%;
+        color: var(--text-color);
+        font-size: 20PX;
+        margin: 0 7PX;
+        transition: all 0.6s ease-in-out;
+    }
+    
+    .social I:HOVER {
+        transform: translateY(-10PX);
+    }
+    
+    .col-4 {
+        display: grid;
+        grid-column-gap: 1px;
+        grid-row-gap: 10px;
+        grid-template-columns: auto auto auto;
+        padding-top: 30PX;
+        margin: 0;
+    }
+
+   
+    /* .card {
+        width: 600px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        margin-left: 30PX;
+        justify-content: space-between;
+    } */
+    
+    .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
     
 }
 @media (max-width: 950px){
+    header {
+        padding: 10px 4%;
+        background: #14141400;
+    }
     .share{
-        display: none;
+        position: absolute;
+        bottom: 205rem;
+        right: 15%;
+        display: flex;
+        align-items: center;
     }
     section{
         padding: 70px 4%;
@@ -281,18 +434,32 @@ section{
     .home-text{
         order: 2;
     }
+    .home-text h1{
+        font-size: 50px;
+    }
+    .home-text p{
+            bottom: 5rem;
+    }
     .home-img{
         margin: auto;
-        height: auto;
-        width: auto;
+        margin-right: 80px;
     }
     .home-img img{
-        max-width: 450px;
-        width: 100%;
-        height: auto;
+        width: auto;
     }
     .menu-btn{
        display: flex;
+    }
+    .tentang{
+        bottom: 5rem;
+        padding: 0%;
+    }
+    .skill{
+        padding: 0%;
+    }
+    .My-project{
+        margin: 0px;
+        padding: 0%;
     }
 }
 @media (max-width: 850px){
@@ -320,6 +487,51 @@ section{
     }
     .navbar.open{
         left: 0;
+    }
+    .column {
+        width: 100PX;
+        height: 150PX;
+        padding: 0;
+        margin: 0;
+    }
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto;
+        width: auto;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        grid-template-columns: auto auto;
+        margin: 0;
+        margin-right: 0;
+    }
+    /* Clear floats after the columns */
+    .card-project {
+        width: 100px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 5;
+        margin-left: 8PX;
+        justify-content: space-between;
+    }
+    
+    .card-project img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .share {
+        position: absolute;
+        bottom: -10rem;
+        left: 10%;
+        display: flex;
+        align-items: center;
     }
 }
 @media (max-width: 500px){
@@ -410,10 +622,115 @@ section{
         margin-bottom: 30px;
      }
 }
-.home-img img{
-    animation: imgg 2s ease-in-out infinite;
-    animation-delay: 2s;   
+@media (max-width: 480px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #2d2d2d;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar a {
+        display: block;
+        color: #c3c3c3;
+        padding: 0px;
+        margin: 0px 0px 40px 0PX;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .row {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+        grid-template-columns: auto;
+        margin: 0;
+        padding-top: 100px;
+        margin-right: 0;
+    }
+    .navbar.open {
+        left: 0;
+    }
+
+    .menu-btn {
+        padding: 10px;
+    }
+
+    #menu-icon {
+        font-size: 24px;
+    }
+    .menu-btn {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .home-text {
+      text-align: center;
+    }
+  
+    .home-img {
+      margin-top: 10px; /* Menambahkan margin di atas gambar pada layar kecil */
+    }
+    .card-about{
+        margin-top: 150px;
+    }
+    .card-about h1 {
+      font-size: 30px;
+      width: 100%;
+    }
+  
+    .avatar {
+      max-width: 100%;
+
+    }
+  
+    .info {
+      margin-top: 10px;
+    }
+  
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .grid-container {
+      text-align: center;
+    }
+  
+    .My-project {
+        margin-top: 50px;
+    }
+    .My-project h1 {
+      font-size: 30px;
+      width: 100%;
+    }
+    .share {
+      bottom: -5rem;
+    }
+    .body a {
+        margin-top: 5px;
+        width: 80px;
+        height: 10px;
+        text-align: center;
+    }
+  }
+  
+
+@media (max-width: 280px){
+    .share{
+        position: absolute;
+        bottom:1rem;
+        display: flex;
+    }
 }
+
 @keyframes imgg {
     0%{
         transform: translateY(0);
@@ -424,9 +741,4 @@ section{
     100%{
         transform: translateY(0px);
     }
-}
-
-ul.navbar li a.active {
-    color: #ffae00;
-    /* Anda juga bisa menambahkan atribut lain sesuai kebutuhan */
 }
